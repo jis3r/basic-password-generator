@@ -1,0 +1,60 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#00416d;
+    background-image: url("background1080.jpg");
+}
+button {
+    width: 100px;
+    height: 20px;
+    background-color: #00bf39;
+    color: white;
+    border: 0px solid black;
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    float: right;
+}
+label{
+    border: 1px solid black;
+}
+input{
+    border: 1px solid black;
+}
+.generator {
+    background-color: rgba(255, 255, 255, 0.3 );
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 450px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    overflow: auto;
+}
+.top {
+    border: 0px solid black;
+    font-size: 14px;
+}
+.middle {
+    border: 0px solid black;
+    text-align: left;
+    margin:auto;
+}
+.bottom {
+    border: 0px solid black;
+    text-align: left;
+    margin:auto;
+}
+.pwlength {
+    width: 200px;
+    border: 1px solid black;
+}
+.pw {
+    width: 370px;
+    float:right;
+}
+output{
+    border: 1px solid black;
+
+}

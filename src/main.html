@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Password-Generator</title>
+        <link rel="stylesheet" href="mainStyle.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>Password-Generator</h1>
+        <div class="generator">
+            <div class="top">
+                <form oninput="updateLength( length, pwlength )">
+                    <label for="pwlength"> Passwordlength:</label>
+                    <input class="pwlength" type="range" id="pwlength" name="pwlength" value="32">
+                    <output name="length"for="pwlength"></output>
+                    <button type="button">Safety</button><br><br>
+                </form>
+            </div>
+            
+            <div class="middle">
+                <input class="checkbox" type="checkbox" id="letters" name="letters">
+                <label for="letters"> Letters</label><br>
+                <input class="checkbox" type="checkbox" id="numbers" name="numbers">
+                <label for="numbers"> Numbers</label><br>
+                <input class="checkbox" type="checkbox" id="symbols" name="symbols">
+                <label for="symbols"> Symbols</label><br><br>
+            </div>
+
+            <div class="bottom">
+                <label for="pw"> Password:</label>
+                <input class="pw"type="text" id="pw" name="pw">            
+            </div>
+        </div>
+
+        <script>window.onload = init( length, pwlength )</script>
+    </body>
+</html>
