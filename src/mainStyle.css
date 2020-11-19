@@ -2,24 +2,19 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     color:#00416d;
-    background-image: url("background1080.jpg");
+    background-image: url("1.jpg");
 }
-button {
-    width: 100px;
-    height: 20px;
-    background-color: #00bf39;
-    color: white;
-    border: 0px solid black;
-    border-radius: 2px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 750;
-    float: right;
+b{
+    vertical-align: middle;
 }
 label{
-    border: 1px solid black;
+    vertical-align: middle;
 }
 input{
-    border: 1px solid black;
+    vertical-align: middle;
+}
+output{
+    vertical-align: middle;
 }
 .generator {
     background-color: rgba(255, 255, 255, 0.3 );
@@ -29,32 +24,47 @@ input{
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 300px;
     overflow: auto;
 }
+.spaceholder {
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0 );
+    color: rgba(255, 255, 255, 0);
+}
 .top {
-    border: 0px solid black;
     font-size: 14px;
+    margin:auto;
 }
 .middle {
-    border: 0px solid black;
-    text-align: left;
     margin:auto;
+    overflow: auto;
 }
 .bottom {
-    border: 0px solid black;
-    text-align: left;
+    font-size: 14px;
     margin:auto;
+    overflow: auto;
 }
 .pwlength {
     width: 200px;
-    border: 1px solid black;
+    color: rgb(11, 95, 153);
+}
+.safetyIndicator {
+    width: 100px;
+    height: 20px;
+    background-color: #00bf39;
+    color: white;
+    border: 0px solid black;
+    border-radius: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    text-align: center;
+    float: right;
 }
 .pw {
     width: 370px;
+    line-height: 14px;
     float:right;
-}
-output{
-    border: 1px solid black;
-
 }

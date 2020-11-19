@@ -5,33 +5,48 @@
         <link rel="stylesheet" href="mainStyle.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
-    <body>
+    <body id="body">
         <h1>Password-Generator</h1>
         <div class="generator">
             <div class="top">
-                <form oninput="updateLength( length, pwlength )">
+                <form oninput="updateLength(); generatePassword()">
                     <label for="pwlength"> Passwordlength:</label>
-                    <input class="pwlength" type="range" id="pwlength" name="pwlength" value="32">
-                    <output name="length"for="pwlength"></output>
-                    <button type="button">Safety</button><br><br>
+                    <input class="pwlength" type="range" id="pwlength" name="pwlength" min="4" max="99" value="32">
+                    <output id="length" name="length" for="pwlength">32</output>
+                    <div class="safetyIndicator" id="safetyIndicator">
+                        <b id="safetyIndicatorContent">Safety</b>
+                    </div>
                 </form>
+            </div>
+
+            <div class="spaceholder">
+                <b>spaceholder</b>
             </div>
             
             <div class="middle">
-                <input class="checkbox" type="checkbox" id="letters" name="letters">
-                <label for="letters"> Letters</label><br>
-                <input class="checkbox" type="checkbox" id="numbers" name="numbers">
-                <label for="numbers"> Numbers</label><br>
-                <input class="checkbox" type="checkbox" id="symbols" name="symbols">
-                <label for="symbols"> Symbols</label><br><br>
+                <form oninput="generatePassword()"></form>
+                    <input class="checkbox" type="checkbox" id="letters" name="letters" checked onchange="generatePassword()">
+                    <label for="letters"> Letters</label><br>
+                    <input class="checkbox" type="checkbox" id="numbers" name="numbers" onchange="generatePassword()">
+                    <label for="numbers"> Numbers</label><br>
+                    <input class="checkbox" type="checkbox" id="symbols" name="symbols" onchange="generatePassword()">
+                    <label for="symbols"> Symbols</label>
+                </form>
             </div>
 
+            <div class="spaceholder">
+                <b>spaceholder</b>
+            </div>
+            
             <div class="bottom">
                 <label for="pw"> Password:</label>
                 <input class="pw"type="text" id="pw" name="pw">            
             </div>
         </div>
 
-        <script>window.onload = init( length, pwlength )</script>
+        <!--button type="button" onclick="generatePassword()">TEST</button-->
+
+
+        <script>window.onload = init()</script>
     </body>
 </html>
