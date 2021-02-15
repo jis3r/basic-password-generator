@@ -4,6 +4,7 @@ function init()
     generatePassword();
 }
 
+
 function chooseWallpaper() 
 {
     random = Math.floor( Math.random() * 4 );
@@ -33,6 +34,7 @@ function updateLength()
     document.getElementById( "length" ).value = parseInt( document.getElementById( "pwlength" ).value );
 }
 
+
 function generatePassword() 
 {
     let length = parseInt( document.getElementById( "pwlength" ).value );
@@ -44,7 +46,6 @@ function generatePassword()
     let numbers = document.getElementById( "numbers" ).checked;
     let symbols = document.getElementById( "symbols" ).checked;
     let count = 0;
-
 
     if( letters === false && numbers === false && symbols === false )
     {
@@ -89,7 +90,7 @@ function generatePassword()
         //console.log('Async: Copying to clipboard was successful!');
     }, function(err) {
     console.error('Async: Could not copy text: ', err);
-});
+    });
 }
 
 

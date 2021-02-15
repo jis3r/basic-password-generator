@@ -3,6 +3,9 @@ body {
     font-size: 14px;
     color:#00416d;
     background-image: url("1.jpg");
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 b{
     vertical-align: middle;
